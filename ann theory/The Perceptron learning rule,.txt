@@ -1,0 +1,31 @@
+The Perceptron learning rule, also known as the Perceptron training algorithm, is a binary classification algorithm used in supervised learning. It adjusts the weights and bias of a Perceptron based on the input data to learn a decision boundary that separates different classes. The decision region refers to the region of input space where the Perceptron assigns a specific class label.
+
+Initialize Weights and Bias:
+1.  Initialize the weights (w) and bias (b) to small random values or zero.
+
+
+Input and Activation:
+1.  Provide an input vector (x) to the Perceptron.
+2.  Calculate the activation (a) as the weighted sum of the input vector and bias:
+        a = (w · x) + b,    where (·) denotes the dot product.
+
+
+Activation Function:
+1.   Apply an activation function (typically the Heaviside step function) to the activation (a) to obtain the predicted output (y_pred):   y_pred = step(a),
+where the step function returns 1 if a is greater than or equal to zero, and 0 otherwise.
+
+
+Update Weights and Bias:
+
+1.  Calculate the error (e) as the difference between the predicted output (y_pred) and the true output (y_true).
+2.  Update the weights and bias based on the error and the learning rate (alpha):
+     w_new = w_old + (alpha * e * x)
+     b_new = b_old + (alpha * e)
+Here, alpha is a small positive constant that controls the learning rate.
+
+
+Repeat:
+1.   Repeat steps 2-4 for all training examples until the desired level of accuracy is achieved or a maximum number of iterations is reached.
+
+Convergence:
+1.    The Perceptron learning rule guarantees convergence if the training data is linearly separable (i.e., there exists a hyperplane that can separate the two classes). However, if the data is not linearly separable, the algorithm may not converge.

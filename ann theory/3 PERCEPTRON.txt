@@ -1,0 +1,16 @@
+We define a Perceptron class to encapsulate the functionality of the Perceptron neural network.
+
+The Perceptron class has three main methods:
+1.    __init__: Initializes the Perceptron object with zero weights.
+2.    predict: Takes an input and calculates the weighted sum of inputs. The activation function used is the Heaviside step function, returning 1 if the sum is greater than or equal to 0, and 0 otherwise.
+3.    train: Takes the training inputs, labels, and the number of epochs. It iterates through the training data, updates the weights based on the prediction error, and adjusts the bias. 
+
+We create a Perceptron object with an input size of 8. Since we're using the ASCII representation of binary numbers, each input represents one bit.
+
+Training data is defined for the ASCII representation of '0' (even) and '1' (odd). More training examples can be added if desired.
+
+Labels are defined as 0 for even and 1 for odd numbers.
+
+We train the Perceptron using the train method, passing the training data.
+
+We train the Perceptron using the train method, passing the training data, labels, and the number of epochs.

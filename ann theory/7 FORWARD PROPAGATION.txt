@@ -1,0 +1,52 @@
+Forward propagation is the process of computing the output of a neural network for a given input. It involves passing the input data through the network's layers, applying activation functions to the weighted sums of the inputs, and propagating the information forward until the output layer is reached. Here's an overview of the forward propagation process in a neural network:
+
+Input Layer:
+
+The input layer receives the input data, which can be a single data point or a batch of data points.
+
+Each input node in the input layer represents a feature or attribute of the data.
+
+
+Hidden Layers:
+
+The input data is passed through one or more hidden layers, which are intermediate layers between the input and output layers.
+
+Each node in the hidden layers performs a weighted sum of the inputs it receives from the previous layer.
+An activation function is applied to the weighted sum to introduce non-linearity and determine the node's output.
+
+
+Weighted Sum:
+
+Each node in a layer calculates a weighted sum of the outputs from the previous layer.
+
+The weights represent the strength or importance of the connections between nodes.
+
+The weighted sum is calculated by multiplying the outputs from the previous layer by their corresponding weights and summing them.
+
+
+
+Activation Function:
+
+After calculating the weighted sum, an activation function is applied to introduce non-linearity and determine the output of each node.
+
+Common activation functions include sigmoid, tanh, ReLU, and softmax, depending on the nature of the problem and the layer in which they are used.
+
+
+Output Layer:
+
+The output layer receives the outputs from the last hidden layer.
+
+The number of nodes in the output layer depends on the problem at hand. For example, in binary classification, there may be one node representing the probability of one class, while in multi-class classification, there may be multiple nodes representing the probabilities of different classes.
+
+
+Output:
+
+The output of the neural network is obtained from the nodes in the output layer.
+
+Depending on the problem, the output may represent class probabilities, regression values, or other relevant information.
+
+During forward propagation, the input data flows through the network layer by layer, and the weighted sums and activations are calculated at each node until the output layer is reached. This process allows the network to transform the input data and produce predictions or outputs based on the learned weights and biases.
+
+
+
+

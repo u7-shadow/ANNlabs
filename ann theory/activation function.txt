@@ -1,0 +1,14 @@
+Sigmoid: The sigmoid activation function maps the input to a value between 0 and 1. It smoothens the output and is useful in models where we need to predict probabilities or when we want a bounded output. The formula for sigmoid activation is:
+sigmoid(x) = 1 / (1 + exp(-x))
+
+
+Hyperbolic Tangent (tanh): The tanh activation function is similar to the sigmoid function but maps the input to a value between -1 and 1. It has steeper gradients than the sigmoid function and can be useful for activations that can be negative. The formula for tanh activation is:
+tanh(x) = (exp(x) - exp(-x)) / (exp(x) + exp(-x))
+
+
+Rectified Linear Unit (ReLU): The ReLU activation function returns 0 for negative inputs and the input value itself for positive inputs. It introduces sparsity and is computationally efficient. The formula for ReLU activation is:
+ReLU(x) = max(0, x)
+
+
+Softmax: The softmax activation function is commonly used in the output layer of classification models. It takes a vector of arbitrary real numbers as input and returns a probability distribution over the classes, summing up to 1. It is useful for multi-class classification problems. The formula for softmax activation is:
+softmax(x_i) = exp(x_i) / sum(exp(x_j))

@@ -1,0 +1,46 @@
+Backpropagation, short for "backward propagation of errors," is an algorithm used to train neural networks by iteratively adjusting the weights and biases based on the calculated errors. It calculates the gradients of the network's parameters with respect to a loss function, which indicates the difference between the predicted output and the desired output. Backpropagation is a key component of gradient-based optimization algorithms, such as stochastic gradient descent, used to update the network's parameters and minimize the loss. Here's an overview of the backpropagation process:
+
+Forward Propagation:
+
+The input data is fed through the neural network, and the output is computed using the current weights and biases.
+The forward propagation process calculates the activations and outputs of each layer, as described in the forward propagation explanation.   
+
+Loss Calculation:
+
+A loss function is defined to measure the discrepancy between the predicted output and the desired output.
+The choice of the loss function depends on the problem type, such as mean squared error for regression or cross-entropy loss for classification.
+
+Backward Pass:
+
+Starting from the output layer, the error (or gradient) of the loss function with respect to the output of each node is calculated.
+The error is then propagated backward through the network, layer by layer, using the chain rule of calculus.
+At each layer, the error is split and distributed to the previous layer's nodes based on their contributions to the error.
+
+Gradient Calculation:
+
+For each node in a layer, the gradient of the loss function with respect to the weighted sum of inputs is calculated.
+This gradient represents the sensitivity of the loss to changes in the weighted sum and is used to update the weights and biases.
+
+Weight and Bias Update:
+
+The calculated gradients are used to update the weights and biases of each node in the network.
+The magnitude and direction of the update are determined by the learning rate, which controls the step size in the optimization process.
+
+Iteration:
+
+The process of forward propagation, loss calculation, backward pass, and weight update is repeated iteratively for a fixed number of epochs or until a convergence criterion is met.
+The goal is to minimize the loss function by adjusting the network's parameters.
+
+
+
+
+
+
+Backpropagation enables the neural network to learn from training data by iteratively adjusting the weights and biases based on the calculated errors. By propagating the errors backward through the network, the algorithm updates the parameters in a way that reduces the discrepancy between the predicted output and the desired output. This iterative optimization process allows the neural network to improve its performance over time and make more accurate predictions.
+
+
+
+
+
+
+

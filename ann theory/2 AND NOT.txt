@@ -1,0 +1,18 @@
+The mcculloch_pitts function takes three parameters: inputs (a list of input values), weights (a list of corresponding weights), and threshold (a threshold value for the neuron's activation).
+
+Inside the function, the weighted sum is calculated by multiplying each input value with its corresponding weight and summing the results.
+
+The threshold function is then applied to the weighted sum. If the weighted sum is greater than or equal to the threshold, the function returns 1 (indicating logical TRUE). Otherwise, it returns 0 (indicating logical FALSE).
+
+In the example, we define the inputs [1, 0] (which represent x1 and x2), weights [1, -1] (which represent w1 and w2), and the threshold value of 1.
+
+The mcculloch_pitts function is called with the inputs, weights, and threshold values.
+
+The output of the function is printed, representing the result of the AND NOT operation.
+
+In this example, the AND NOT operation is implemented using the McCulloch-Pitts neuron model. The output will be 1 (logical TRUE) if the input values satisfy the condition x1 = 1 and x2 = 0, and 0 (logical FALSE) otherwise.
+
+
+The AND NOT function is a logical operation that takes two binary inputs and returns 1 (TRUE) if the first input is 1 and the second input is 0. Otherwise, it returns 0 (FALSE). 
+
+the AND NOT function is implemented using a simple if-else statement in Python. It checks the values of the two input arguments and returns the corresponding result.
